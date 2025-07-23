@@ -1,0 +1,44 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 04 Jun 2025 18:08:25 at https://mymartdeal.store https://mymartdeal.store/product-details/c81e728d9d4c2f636f067f89cc14862c?r=4.4&r1=9459 +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://mymartdeal.store https://mymartdeal.store/product-details/c81e728d9d4c2f636f067f89cc14862c?r=4.4&r1=9459 -O1 "C:\My Web Sites\final flipkart clone finalest" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:08:37	Error: 	"Forbidden" (403) at link https://mymartdeal.store/api_services/ (from https://mymartdeal.store/)
+18:08:37	Warning: 	Found for https://mymartdeal.store/admin_panel/
+18:08:37	Warning: 	File has moved from https://mymartdeal.store/admin_panel/ to login.php
+18:08:40	Error: 	"Not Found" (404) at link https://mymartdeal.store/external452e452e452e452e.html?link=http://www.w3.org/2000/svg (from https://mymartdeal.store/)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/a (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/POST (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/schema.org/ (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/b.resolvedLink (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/d (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/signals/iwl.js (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/c.dl (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/c.rl (from https://connect.facebook.net/en_US/fbevents.js)
+18:08:53	Error: 	"Not Found" (404) at link https://mymartdeal.store/popper.js (from https://mymartdeal.store/assets/js/bootstrap.min.js)
+18:09:09	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/manage_projects.php (from https://mymartdeal.store/admin_panel/login.php)
+18:09:09	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/index.html (from https://mymartdeal.store/admin_panel/login.php)
+18:09:22	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/images/user_avtar.png (from https://mymartdeal.store/admin_panel/login.php)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/typeahead.js (from https://mymartdeal.store/admin_panel/assets/js/typeahead.bundle.min.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/applewebkit/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/chrome/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/edge/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/mixins/_rounded.css (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/mixins/_focus.css (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/mixins/_shadow.css (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/mixins/_disabled.css (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/mixins/_button.css (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/Edge/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/Chrome/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/Trident/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/Firefox/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/Safari/ (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/bundle.js (from https://mymartdeal.store/admin_panel/assets/js/ckeditor.js)
+18:09:32	Error: 	"Not Found" (404) at link https://mymartdeal.store/admin_panel/rtl.min.css (from https://mymartdeal.store/admin_panel/assets/js/app.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 8 seconds : 158 links scanned, 125 files written (21146213 bytes overall) [8291019 bytes received at 121926 bytes/sec], 18992117 bytes transferred using HTTP compression in 112 files, ratio 31%, 11.5 requests per connection
+(31 errors, 2 warnings, 0 messages)

@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+mymartdeal.store	TRUE	/	FALSE	1999999999	timezone	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	user	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	session_key	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	session_key__1	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	user_1	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	$Version	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	PHPSESSID	deleted
+mymartdeal.store	TRUE	/	FALSE	1999999999	$Path	deleted
+

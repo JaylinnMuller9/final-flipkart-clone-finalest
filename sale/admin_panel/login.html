@@ -1,0 +1,667 @@
+<!doctype html>
+<html class="fixed sidebar-left-collapsed">
+
+
+<!-- Mirrored from mymartdeal.store/admin_panel/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jun 2025 12:38:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<!-- Basic -->
+	<meta charset="UTF-8">
+
+
+	<title>Flipkart</title>
+	<meta name="keywords" content="Flipkart" />
+	<meta name="description" content="Flipkart User Panel">
+	<meta name="google" content="notranslate">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
+	<link rel="icon" type="image/x-icon" sizes="192x192" href="assets/images/favicon.ico">
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="assets/images/favicon.ico">
+	<link rel="icon" type="image/x-icon" sizes="96x96" href="assets/images/favicon.ico">
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
+
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/favicon.ico">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<!-- Plugin css -->
+	<link rel="stylesheet" href="assets/css/daterangepicker.css">
+	<link rel="stylesheet" href="assets/css/pnotify.custom.css" />
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/select2.min.css" type="text/css" />
+
+	<link href="assets/css/app-saas.min.css" rel="stylesheet" type="text/css" id="app-style" />
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- Web Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	
+	<!-- Theme Config Js -->
+	<script src="assets/js/hyper-config.js"></script>
+	<script>
+		var clevertap = null;
+		var mixpanel = null;
+		// Domain
+		const domain = 'manage_projects.html';
+		const domain_global = 'login.html';
+
+		// MySQL API
+		const notify_panel_url = 'index.html';
+	</script>
+</head>
+
+<body class="">
+	<div class="wrapper">
+		<div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-4 col-lg-5">
+                <div class="card">
+
+                    <!-- Logo -->
+                    <div class="card-header pt-2 pb-2 text-center bg-primary">
+                        <a href="index-2.html">
+                            <span><img src="assets/images/logo.png" alt="logo" height="100"></span>
+                        </a>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center w-75 m-auto">
+                            <h4 class="text-dark-50 text-center pb-0 fw-bold">Sign In</h4>
+                            <p class="text-muted mb-4">Enter your username and password to access admin panel.</p>
+                        </div>
+
+                        <form method="post">
+
+                            <div class="mb-3 non-otp-div">
+                                <label for="tb_username" class="form-label">Username </label>
+                                <input class="form-control" type="text" id="tb_username" required="" placeholder="Username">
+                            </div>
+
+                            <div class="mb-3 non-otp-div">
+                                <label for="tb_password" class="form-label">Password</label>
+                                <div class="input-group input-group-merge">
+                                    <input type="password" id="tb_password" class="form-control" required="" placeholder="Password">
+                                    <div class="input-group-text" data-password="false">
+                                        <span class="password-eye"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 otp-div d-none">
+                                <label for="otp" class="form-label">OTP</label>
+                                <input type="text" id="otp" class="form-control" required="" placeholder="OTP">
+                            </div>
+
+                            <div class="mb-3 mb-0 text-center non-otp-div">
+                                <button class="btn btn-primary" type="button" onclick="return login_user();"> Log In </button>
+                            </div>
+                            <div class="mb-3 mb-0 text-center otp-div d-none">
+                                <button class="btn btn-primary" type="button" onclick="return verify_otp();"> Verify OTP </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end card-body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</div>
+<!-- end page -->
+
+
+<div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
+	<div class="d-flex align-items-center bg-primary p-3 offcanvas-header">
+		<h5 class="text-white m-0">Theme Settings</h5>
+		<button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+
+	<div class="offcanvas-body p-0">
+		<div data-simplebar class="h-100">
+			<div class="card mb-0 p-3">
+
+				<h5 class="my-3 font-16 fw-bold">Color Scheme</h5>
+
+				<div class="colorscheme-cardradio">
+					<div class="row">
+						<div class="col-4">
+							<div class="form-check card-radio">
+								<input class="form-check-input" type="radio" name="data-theme" id="layout-color-light"
+									value="light">
+								<label class="form-check-label p-0 avatar-md w-100" for="layout-color-light">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end flex-column p-1 px-2">
+												<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column bg-white">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Light</h5>
+						</div>
+
+						<div class="col-4">
+							<div class="form-check card-radio">
+								<input class="form-check-input" type="radio" name="data-theme" id="layout-color-dark"
+									value="dark">
+								<label class="form-check-label p-0 avatar-md w-100 bg-black" for="layout-color-dark">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light-lighten d-flex h-100 flex-column p-1 px-2">
+												<span class="d-block p-1 bg-light-lighten rounded mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light-lighten d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Dark</h5>
+						</div>
+					</div>
+				</div>
+
+				<div id="layout-width">
+					<h5 class="my-3 font-16 fw-bold">Layout Mode</h5>
+
+					<div class="row">
+						<div class="col-4">
+							<div class="form-check card-radio">
+								<input class="form-check-input" type="radio" name="data-layout-mode"
+									id="layout-mode-fluid" value="fluid">
+								<label class="form-check-label p-0 avatar-md w-100" for="layout-mode-fluid">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end  flex-column p-1 px-2">
+												<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Fluid</h5>
+						</div>
+						<div class="col-4" id="layout-boxed">
+							<div class="form-check card-radio">
+								<input class="form-check-input" type="radio" name="data-layout-mode"
+									id="layout-mode-boxed" value="boxed">
+								<label class="form-check-label p-0 avatar-md w-100 px-2" for="layout-mode-boxed">
+									<span class="d-flex h-100 border-start border-end">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end flex-column p-1">
+												<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Boxed</h5>
+						</div>
+
+						<div class="col-4" id="layout-detached">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-layout-mode"
+									id="data-layout-detached" value="detached">
+								<label class="form-check-label p-0 avatar-md w-100" for="data-layout-detached">
+									<span class="d-flex h-100 flex-column">
+										<span class="bg-light d-flex p-1 align-items-center border-bottom">
+											<span class="d-block p-1 bg-dark-lighten rounded me-1"></span>
+											<span class="d-block border border-3 ms-auto"></span>
+											<span class="d-block border border-3 ms-1"></span>
+											<span class="d-block border border-3 ms-1"></span>
+											<span class="d-block border border-3 ms-1"></span>
+										</span>
+										<span class="d-flex h-100 p-1 px-2">
+											<span class="flex-shrink-0">
+												<span class="bg-light d-flex h-100 flex-column p-1 px-2">
+													<span class="d-block border border-3 w-100 mb-1"></span>
+													<span class="d-block border border-3 w-100 mb-1"></span>
+													<span class="d-block border border-3 w-100"></span>
+												</span>
+											</span>
+										</span>
+										<span class="bg-light d-block p-1 mt-auto px-2"></span>
+									</span>
+
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Detached</h5>
+						</div>
+					</div>
+				</div>
+
+				<h5 class="my-3 font-16 fw-bold">Topbar Color</h5>
+
+				<div class="row">
+					<div class="col-4">
+						<div class="form-check card-radio">
+							<input class="form-check-input" type="radio" name="data-topbar-color"
+								id="topbar-color-light" value="light">
+							<label class="form-check-label p-0 avatar-md w-100" for="topbar-color-light">
+								<span class="d-flex h-100">
+									<span class="flex-shrink-0">
+										<span class="bg-light d-flex h-100 border-end  flex-column p-1 px-2">
+											<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+										</span>
+									</span>
+									<span class="flex-grow-1">
+										<span class="d-flex h-100 flex-column">
+											<span class="bg-light d-block p-1"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+						</div>
+						<h5 class="font-14 text-center text-muted mt-2">Light</h5>
+					</div>
+					<div class="col-4">
+						<div class="form-check card-radio">
+							<input class="form-check-input" type="radio" name="data-topbar-color" id="topbar-color-dark"
+								value="dark">
+							<label class="form-check-label p-0 avatar-md w-100" for="topbar-color-dark">
+								<span class="d-flex h-100">
+									<span class="flex-shrink-0">
+										<span class="bg-light d-flex h-100 border-end  flex-column p-1 px-2">
+											<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+											<span class="d-block border border-3 w-100 mb-1"></span>
+										</span>
+									</span>
+									<span class="flex-grow-1">
+										<span class="d-flex h-100 flex-column">
+											<span class="bg-dark d-block p-1"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+						</div>
+						<h5 class="font-14 text-center text-muted mt-2">Dark</h5>
+					</div>
+				</div>
+
+				<div id="sidebar-color">
+					<h5 class="my-3 font-16 fw-bold">Sidebar Color</h5>
+
+					<div class="row">
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-color"
+									id="leftbar-color-light" value="light">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-color-light">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end  flex-column p-1 px-2">
+												<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Light</h5>
+						</div>
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-color"
+									id="leftbar-color-dark" value="dark">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-color-dark">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-dark d-flex h-100 flex-column p-1 px-2">
+												<span class="d-block p-1 bg-light-lighten rounded mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Dark</h5>
+						</div>
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-color"
+									id="leftbar-color-default" value="default">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-color-default">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-primary bg-gradient d-flex h-100 flex-column p-1 px-2">
+												<span class="d-block p-1 bg-light-lighten rounded mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+												<span class="d-block border opacity-25 border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Brand</h5>
+						</div>
+					</div>
+				</div>
+
+				<div id="sidebar-size">
+					<h5 class="my-3 font-16 fw-bold">Sidebar Size</h5>
+
+					<div class="row">
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-size"
+									id="leftbar-size-default" value="default">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-size-default">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end  flex-column p-1 px-2">
+												<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Default</h5>
+						</div>
+
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-size"
+									id="leftbar-size-compact" value="compact">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-size-compact">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end  flex-column p-1">
+												<span class="d-block p-1 bg-dark-lighten rounded mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Compact</h5>
+						</div>
+
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-size"
+									id="leftbar-size-small" value="condensed">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-size-small">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end  flex-column">
+												<span class="d-block p-1 bg-dark-lighten mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Condensed</h5>
+						</div>
+
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-size"
+									id="leftbar-size-small-hover" value="sm-hover">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-size-small-hover">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="bg-light d-flex h-100 border-end  flex-column">
+												<span class="d-block p-1 bg-dark-lighten mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+												<span class="d-block border border-3 w-100 mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Hover View</h5>
+						</div>
+
+						<div class="col-4">
+							<div class="form-check sidebar-setting card-radio">
+								<input class="form-check-input" type="radio" name="data-sidenav-size" id="leftbar-size-full" value="full">
+								<label class="form-check-label p-0 avatar-md w-100" for="leftbar-size-full">
+									<span class="d-flex h-100">
+										<span class="flex-shrink-0">
+											<span class="d-flex h-100 border-end  flex-column">
+												<span class="d-block p-1 bg-dark-lighten mb-1"></span>
+											</span>
+										</span>
+										<span class="flex-grow-1">
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1"></span>
+											</span>
+										</span>
+									</span>
+								</label>
+							</div>
+							<h5 class="font-14 text-center text-muted mt-2">Full Layout</h5>
+						</div>
+					</div>
+				</div>
+
+				<div id="layout-position">
+					<h5 class="my-3 font-16 fw-bold">Layout Position</h5>
+
+					<div class="btn-group radio" role="group">
+						<input type="radio" class="btn-check" name="data-layout-position" id="layout-position-fixed" value="fixed">
+						<label class="btn btn-light w-sm" for="layout-position-fixed">Fixed</label>
+
+						<input type="radio" class="btn-check" name="data-layout-position" id="layout-position-scrollable" value="scrollable">
+						<label class="btn btn-light w-sm ms-0" for="layout-position-scrollable">Scrollable</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="offcanvas-footer border-top p-3 text-center">
+		<div class="row">
+			<div class="col-12">
+				<button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer footer-alt">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12  footer-links d-none d-md-block">
+				<script>
+					document.write(new Date().getFullYear())
+				</script> © Fkart
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div id="delete_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-sm">
+		<div class="modal-content">
+			<div class="modal-body p-4">
+				<div class="text-center">
+					<i class="ri-alert-line h1 text-warning"></i>
+					<h4 class="mt-2">Are you sure?</h4>
+					<p class="mt-3">you want to delete data?</p>
+					<button type="button" class="btn btn-warning my-2" data-bs-dismiss="modal" onclick="delete_current_record()">Continue</button>
+					<button type="button" class="btn btn-default my-2" data-bs-dismiss="modal" onclick="PRIMARY_ID = 0;">close</button>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
+<!-- Vendor js -->
+<script src="assets/js/vendor.min.js"></script>
+
+
+
+<!-- Typehead -->
+<script src="assets/js/handlebars.min.js"></script>
+<script src="assets/js/typeahead.bundle.min.js"></script>
+
+<!-- nprogress Js -->
+<script defer src="assets/js/nprogress.js"></script>
+<script defer src="assets/js/jstz.min.js"></script>
+<script defer src="assets/js/moment.min.js"></script>
+<script defer src="assets/js/daterangepicker.js"></script>
+<script defer src="assets/js/pnotify.custom.js"></script>
+<script defer src="assets/js/jquery.dataTables.min.js"></script>
+<script defer src="assets/js/dataTables.bootstrap5.min.js"></script>
+<script defer src="assets/js/select2.min.js"></script>
+<script defer src="assets/js/ckeditor.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.min.js"></script>
+<script>
+	var IS_PRODUCTION = '1';
+	var IS_DEVELOPMENT = '';
+	var WEB_API_FOLDER = '../api_services/index.html';
+	var API_SERVICE_URL = '../api_services/manage.json';
+	var ADMIN_PANEL_URL = 'index.html';
+	var USER_AVATAR = 'images/user_avtar.html';
+	var CURRENT_USER_ID = '';
+	var LOGGED_IN_USERNAME = ' ';
+	var CURRENT_COMPANY_ID = '';
+	var GLOBAL_PROJECT_KEY = 'production__global_project';
+	var GLOBAL_STORAGE_KEY = 'production__global_storage';
+	var HANDLEBARS_PAGES = ["\/","index.php"];
+	</script><script defer type="text/javascript">
+var PRIMARY_ID = 0;
+var CURRENT_PAGE = "login.html";
+var LOGGED_IN_ROLE_ID = "0";
+var IS_PRODUCTION="1";
+var LOCALE = "en";
+var TBLDATA = [];
+</script><script defer type="text/javascript">
+    var MODULE_NAME = "login";
+    </script><script>
+	var MD5 = function(d){var r = M(V(Y(X(d),8*d.length)));return r.toLowerCase()};function M(d){for(var _,m="0123456789ABCDEF",f="",r=0;r<d.length;r++)_=d.charCodeAt(r),f+=m.charAt(_>>>4&15)+m.charAt(15&_);return f}function X(d){for(var _=Array(d.length>>2),m=0;m<_.length;m++)_[m]=0;for(m=0;m<8*d.length;m+=8)_[m>>5]|=(255&d.charCodeAt(m/8))<<m%32;return _}function V(d){for(var _="",m=0;m<32*d.length;m+=8)_+=String.fromCharCode(d[m>>5]>>>m%32&255);return _}function Y(d,_){d[_>>5]|=128<<_%32,d[14+(_+64>>>9<<4)]=_;for(var m=1732584193,f=-271733879,r=-1732584194,i=271733878,n=0;n<d.length;n+=16){var h=m,t=f,g=r,e=i;f=md5_ii(f=md5_ii(f=md5_ii(f=md5_ii(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_ff(f=md5_ff(f=md5_ff(f=md5_ff(f,r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+0],7,-680876936),f,r,d[n+1],12,-389564586),m,f,d[n+2],17,606105819),i,m,d[n+3],22,-1044525330),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+4],7,-176418897),f,r,d[n+5],12,1200080426),m,f,d[n+6],17,-1473231341),i,m,d[n+7],22,-45705983),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+8],7,1770035416),f,r,d[n+9],12,-1958414417),m,f,d[n+10],17,-42063),i,m,d[n+11],22,-1990404162),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+12],7,1804603682),f,r,d[n+13],12,-40341101),m,f,d[n+14],17,-1502002290),i,m,d[n+15],22,1236535329),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+1],5,-165796510),f,r,d[n+6],9,-1069501632),m,f,d[n+11],14,643717713),i,m,d[n+0],20,-373897302),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+5],5,-701558691),f,r,d[n+10],9,38016083),m,f,d[n+15],14,-660478335),i,m,d[n+4],20,-405537848),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+9],5,568446438),f,r,d[n+14],9,-1019803690),m,f,d[n+3],14,-187363961),i,m,d[n+8],20,1163531501),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+13],5,-1444681467),f,r,d[n+2],9,-51403784),m,f,d[n+7],14,1735328473),i,m,d[n+12],20,-1926607734),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+5],4,-378558),f,r,d[n+8],11,-2022574463),m,f,d[n+11],16,1839030562),i,m,d[n+14],23,-35309556),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+1],4,-1530992060),f,r,d[n+4],11,1272893353),m,f,d[n+7],16,-155497632),i,m,d[n+10],23,-1094730640),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+13],4,681279174),f,r,d[n+0],11,-358537222),m,f,d[n+3],16,-722521979),i,m,d[n+6],23,76029189),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+9],4,-640364487),f,r,d[n+12],11,-421815835),m,f,d[n+15],16,530742520),i,m,d[n+2],23,-995338651),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+0],6,-198630844),f,r,d[n+7],10,1126891415),m,f,d[n+14],15,-1416354905),i,m,d[n+5],21,-57434055),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+12],6,1700485571),f,r,d[n+3],10,-1894986606),m,f,d[n+10],15,-1051523),i,m,d[n+1],21,-2054922799),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+8],6,1873313359),f,r,d[n+15],10,-30611744),m,f,d[n+6],15,-1560198380),i,m,d[n+13],21,1309151649),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+4],6,-145523070),f,r,d[n+11],10,-1120210379),m,f,d[n+2],15,718787259),i,m,d[n+9],21,-343485551),m=safe_add(m,h),f=safe_add(f,t),r=safe_add(r,g),i=safe_add(i,e)}return Array(m,f,r,i)}function md5_cmn(d,_,m,f,r,i){return safe_add(bit_rol(safe_add(safe_add(_,d),safe_add(f,i)),r),m)}function md5_ff(d,_,m,f,r,i,n){return md5_cmn(_&m|~_&f,d,_,r,i,n)}function md5_gg(d,_,m,f,r,i,n){return md5_cmn(_&f|m&~f,d,_,r,i,n)}function md5_hh(d,_,m,f,r,i,n){return md5_cmn(_^m^f,d,_,r,i,n)}function md5_ii(d,_,m,f,r,i,n){return md5_cmn(m^(_|~f),d,_,r,i,n)}function safe_add(d,_){var m=(65535&d)+(65535&_);return(d>>16)+(_>>16)+(m>>16)<<16|65535&m}function bit_rol(d,_){return d<<_|d>>>32-_}
+	let CF = false
+</script><script defer src="js/common.js"></script><script defer src="js/login.js"></script></div>
+<script src="assets/js/highlight.pack.min.js"></script>
+<script src="assets/js/hyper-syntax.js"></script>
+<!-- fileupload js -->
+<script src="assets/js/dropzone.min.js"></script>
+<script src="assets/js/component.fileupload.js"></script>
+</body>
+
+
+<!-- Mirrored from mymartdeal.store/admin_panel/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jun 2025 12:38:53 GMT -->
+</html>
