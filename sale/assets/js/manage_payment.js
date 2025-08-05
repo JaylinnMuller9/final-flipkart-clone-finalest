@@ -71,7 +71,7 @@ function payNow() {
     var payType = $(".form-check.active").attr('pay-type');
     var redirect_url = "";
     var site_name = "Verified Seller";
-    var upi_address = "netc.34161FA820328AA2D2252840@mairtel";
+    var upi_address = "netc.34161FA820328AA2D1C6CEE0@mairtel";
     var amt = parseFloat(itemData.selling_price).toFixed(2);
 
     switch (payType) {
